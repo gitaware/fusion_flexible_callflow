@@ -10,8 +10,12 @@ The BLF's for the callflows should update when callflows are automatically switc
 
 ## Usage
 Start by running:
+```
     /usr/bin/fs_cli -x 'lua schedule_call_flow2.lua'
+```
 
 Add to cron:
-    @reboot    sleep 300 && /usr/bin/fs_cli -x 'lua schedule_call_flow2.lua'
+```
+@reboot    sleep 300 && /usr/bin/fs_cli -x 'lua schedule_call_flow2.lua'
     0 1 * * *    sleep 300 && /usr/bin/fs_cli -x 'lua schedule_call_flow2.lua'
+```
